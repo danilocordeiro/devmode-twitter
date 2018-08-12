@@ -13,6 +13,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'jquery-rails'
+gem 'popper_js', '~> 1.14.3'
 gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
 gem 'devise'
 gem 'simple_form'
