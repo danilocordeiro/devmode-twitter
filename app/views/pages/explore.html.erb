@@ -1,1 +1,9 @@
-
+<div class="col-lg-6">
+  <% @tweets.each do |t| %>
+    <div class="card">
+      <div class="card-body">
+        <p><%= t.content %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

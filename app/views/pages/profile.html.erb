@@ -14,13 +14,15 @@
       </div>
     </div>
   </div>
-
+  
   <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <p>tweets</p>
+    <% @tweets.each do |t| %>
+      <div class="card">
+        <div class="card-body">
+          <p><%= t.content %></p>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 
   <div class="col-lg-3">
@@ -29,16 +31,12 @@
         <p>who to follow</p> 
       </div>
     </div>
-  </div>
 
-</div>
-
-<div class="row">
-  <div class="col-lg-3 offset-lg-9">
     <div class="card">
       <div class="card-body">
         <p>trends</p> 
       </div>
     </div>
   </div>
+
 </div>
