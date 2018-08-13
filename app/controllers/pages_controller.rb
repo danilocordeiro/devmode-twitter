@@ -14,6 +14,7 @@ class PagesController < ApplicationController
     end
 
     @tweets = current_user.tweets.all
+    @tweet = Tweet.new
   end
 
   def explore

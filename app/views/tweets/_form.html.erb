@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-body">
+    <p class="card-text">
+      <%= simple_form_for(@tweet) do |f| %>
+        <%= f.input :content, as: :text, label: false, placeholder: 'What do you have in your mind now?', input_html: { maximum: 140, class: "textarea" } %>
+
+        <%= f.button :submit, 'Post', class: 'btn btn-success btn-block' %>
+      <% end %>
+    </p>
+  </div>
+</div>
